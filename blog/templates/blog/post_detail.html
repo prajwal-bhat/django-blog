@@ -6,6 +6,12 @@
                     <p>published: {{ post.published_date }}</p>
                 </div>
             {% endif %}
+            {% if user.is_authenticated %}
+                <a href="{% url 'post_edit' pk=post.pk %}" class="btn btn-primary a-btn-slide-text">
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                    <span><strong>Edit</strong></span>            
+                </a>    
+            {% endif %}        
             <h2>{{ post.title }}</h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
