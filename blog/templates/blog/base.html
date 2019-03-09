@@ -22,6 +22,14 @@
                 </a>
             </div>
         {% endif %}
+        {% if user.is_authenticated %}
+            <div class="top-menu">
+                <a href="{% url 'post_draft_list' %}" class="btn btn-primary a-btn-slide-text">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    <span><strong>Drafts</strong></span>            
+                </a>
+            </div>
+        {% endif %}
         <h1><a href="/">My Blog</a></h1>
     </div>
 
