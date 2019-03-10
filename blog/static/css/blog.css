@@ -69,3 +69,7 @@ a.btn {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
 }
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}
